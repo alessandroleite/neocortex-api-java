@@ -167,12 +167,4 @@ public class ServiceBuilder implements NeocortexClient {
 
 		return url.toString();
 	}
-	
-	public static void main(String[] args) throws MalformedURLException, IOException {
-		ServiceBuilder builder = new ServiceBuilder();
-		String url = "http://g1.globo.com/economia/noticia/2011/10/demissoes-sem-justa-somam-419-milhoes-entre-2007-e-agosto-de-2011.html";
-		String res = builder.apiKey("mt-94aef06f74d542dfa1eed5a3dd0ea5bb").
-		  categories(new GeneralKnowledge()).entities().keywords().language().format(Format.XML).input(new URL(url)).meaningfy();
-		System.out.println(res);
-	}
 }
