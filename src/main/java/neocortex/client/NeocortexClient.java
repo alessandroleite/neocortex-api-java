@@ -75,6 +75,6 @@ public interface NeocortexClient {
 	 * @return
 	 * @throws IOException
 	 */
-	public Object get() throws IOException;
+	String meaningfy() throws IOException;
 
 }

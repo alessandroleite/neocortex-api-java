@@ -6,6 +6,7 @@ import java.net.URL;
 
 import neocortex.client.Category;
 import neocortex.client.Format;
+import neocortex.client.GeneralKnowledge;
 import neocortex.client.NeocortexClient;
 
 import com.google.common.base.Preconditions;
@@ -118,7 +119,7 @@ public class ServiceBuilder implements NeocortexClient {
 	 * @throws IOException 
 	 */
 	@Override
-	public Object get() throws IOException {
+	public String meaningfy() throws IOException {
 		
 		if (this.url != null) {
 			this.input = this.url.toString();
@@ -165,5 +166,13 @@ public class ServiceBuilder implements NeocortexClient {
 		url.append(keys);
 
 		return url.toString();
+	}
+	
+	public static void main(String[] args) throws MalformedURLException, IOException {
+		ServiceBuilder builder = new ServiceBuilder();
+		String url = "http://g1.globo.com/economia/noticia/2011/10/demissoes-sem-justa-somam-419-milhoes-entre-2007-e-agosto-de-2011.html";
+		String res = builder.apiKey("mt-94aef06f74d542dfa1eed5a3dd0ea5bb").
+		  categories(new GeneralKnowledge()).entities().keywords().language().format(Format.XML).input(new URL(url)).meaningfy();
+		System.out.println(res);
 	}
 }
