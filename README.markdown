@@ -10,7 +10,11 @@ ServiceBuilder builder = new ServiceBuilder();
 
 Then, you can chain any api method, for example:
 
-String payload = builder.apiKey("<your key>").categories(new GeneralKnowledge()).entities().keywords().language().format(Format.XML).input("<url> or your input text").meaningfy()); 	 
+String payload = builder.apiKey("yourkey").categories(new GeneralKnowledge())
+						.entities()
+						.keywords().language().format(Format.XML)
+						.input("<url> or your input text")
+						.meaningfy()); 	 
 
 [meaningtool]: http://www.meaningtool.com
 [apidocs]: http://www.meaningtool.com/developers/api
