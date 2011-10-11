@@ -15,7 +15,7 @@ String payload = builder.apiKey("yourkey").categories(new GeneralKnowledge())
 						.keywords().language().format(Format.XML)
 						.input("<url> or your input text")
 						.meaningfy()); 	 
-
+						
 [meaningtool]: http://www.meaningtool.com
 [apidocs]: http://www.meaningtool.com/developers/api
 [treedirectory]: http://www.meaningtool.com/developers/directory
