@@ -1,0 +1,56 @@
+package neocortex.client;
+
+public class TreeType {
+
+	private String treeKey;
+
+	private boolean topTerms;
+
+	private boolean classifiers;
+
+	public TreeType gadgetsTrends() {
+		this.treeKey = "7fdc08c2-37e8-46a6-b8db-27e328d47320";
+		return this;
+	}
+
+	public TreeType advertising() {
+		this.treeKey = "def1d6b8-ac04-47de-8731-b35da631464f";
+		return this;
+	}
+
+	public TreeType generalKnowledge() {
+		this.treeKey = "b4678fa0-45ae-499d-8bc0-a0d3244a7d93";
+		return this;
+	}
+
+	public TreeType topTerms() {
+		this.topTerms = true;
+		return this;
+	}
+
+	public TreeType classifiers() {
+		this.classifiers = true;
+		return this;
+	}
+
+	/**
+	 * @return Get the tree key value
+	 */
+	public String getTreeKey() {
+		return treeKey;
+	}
+
+	/**
+	 * @return
+	 */
+	public boolean isClassifiers() {
+		return classifiers;
+	}
+
+	/**
+	 * @return
+	 */
+	public boolean isTopTerms() {
+		return topTerms;
+	}
+}
