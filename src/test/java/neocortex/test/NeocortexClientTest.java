@@ -13,22 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package neocortex.client;
+package neocortex.test;
 
-public class Category {
-
-	private TreeType treeType;
-	
-	public Category() {
-		super();
-	}
-
-	public Category(TreeType treeType) {
-		this.treeType = treeType;
-	}
-
-	public TreeType getTreeType() {
-		return treeType;
-	}
+public class NeocortexClientTest {
 
 }

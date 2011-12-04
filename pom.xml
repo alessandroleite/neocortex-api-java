@@ -9,7 +9,7 @@
 	<inceptionYear>2011</inceptionYear>
 
 	<description>
-		This is a library that implements meaningtool's neocortex API in java.
+		This is a library that implements meaningtool's neocortex API in Java.
     </description>
 
 	<developers>
@@ -23,17 +23,17 @@
 			</roles>
 		</developer>
 	</developers>
+	
+	<scm>
+		<connection>scm:git:git://github.com/alessandroleite/neocortex-api-java.git</connection>
+		<developerConnection>scm:git:git://github.com/alessandroleite/neocortex-api-java.git</developerConnection>
+		<url>http://github.com/alessandroleite/neocortex-api-java.git</url>
+	</scm>
 
 	<repositories>
 		<repository>
 			<id>jboss</id>
 			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
-		</repository>
-		<repository>
-			<id>gwt-maven</id>
-			<url>
-				http://gwt-maven.googlecode.com/svn/trunk/mavenrepo/
-            </url>
 		</repository>
 		<repository>
 			<id>maven-repository.dev.java.net</id>
@@ -148,22 +148,6 @@
 			<id>sonatype-plugin-repo</id>
 			<name>sonatype plugin repository</name>
 			<url>http://oss.sonatype.org/content/repositories/github-releases</url>
-		</pluginRepository>
-		<pluginRepository>
-			<id>gwt-maven-plugins</id>
-			<url>
-				http://gwt-maven.googlecode.com/svn/trunk/mavenrepo/
-            </url>
-		</pluginRepository>
-		<pluginRepository>
-			<id>bees-plugins-snapshots</id>
-			<url>http://repository-cloudbees.forge.cloudbees.com/public-snapshot/  </url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
 
@@ -302,7 +286,7 @@
 				<artifactId>maven-license-plugin</artifactId>
 				<version>1.9.0</version>
 				<configuration>
-					<header>src/etc/header.txt</header>
+					<header>src/etc/license.txt</header>
 				</configuration>
 			</plugin>
 			<plugin>
